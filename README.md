@@ -8,6 +8,8 @@ SWAXS-AMDE (Small and Wide Angle X-ray Scattering for All Molecular Dynamics Eng
 
 SWAXS-AMDE addresses the challenges frequently found in continuum solvent and other less detailed models of scattering analysis by carefully considering the effect of the density variation of the solvent (due to the presence of the solute) in the computation of the simulated background subtracted intensities. SWAXS-AMDE uses the [MDTraj](https://github.com/mdtraj/mdtraj) library and is hence capable of handling binary trajectory files from all of the main MD engines. MDTraj needs to be installed on the cluster before SWAXS-AMDE can be run by the user. MDTraj can be easily installed using the conda environment on a cluster (webpage for installation of MDTraj - [https://mdtraj.org/1.9.3/installation.html](https://mdtraj.org/1.9.3/installation.html)). The detailed nature of the SWAXS-AMDE program means that a computing cluster is usually required for its use.
 
+For now the bulk solvent can only be pure water, but depending on the interest the code will be modified to be able to handle added salt and eventually other kinds of solvents.
+
 Details of the codes provided on this Github page
 -------------------------------------------------------------
 
