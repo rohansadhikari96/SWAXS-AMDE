@@ -98,6 +98,8 @@ for i in range(num_points):
         a = fmt % (exp_q[i], calc_iq_best[i], calc_err_new[i])
         out.append(a)
 
+# Name of the final scaled computational file. Change the path of the final scaled computational file within the quotation marks ('').
+
 open('Explicit_Water_Scaled_q_Iq.txt', 'w').writelines(out)
 
 # Plotting the computed and experimental scattering profiles.
