@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -p shared
+#SBATCH -t 13:00:00
+#SBATCH --job-name=Example
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=100
+#SBATCH --mem=240G
+#SBATCH --account=account_name
+
+module reset
+module load cpu/0.17.3b
+module load anaconda3/2021.05/q4munrg
+. $ANACONDA3HOME/etc/profile.d/conda.sh
+conda activate /path/to/folder/fr_mdtraj
+
+python -u parallel_saxs_all.py > log_file
