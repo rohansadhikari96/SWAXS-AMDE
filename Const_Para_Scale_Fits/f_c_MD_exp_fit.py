@@ -94,4 +94,17 @@ for i in range(num_points):
 
 open('Explicit_Water_Scaled_q_Iq.txt', 'w').writelines(out)
 
+# Plotting the computed and experimental scattering profiles.
+plt.style.use("paper.mplstyle")
+plt.plot(exp_q, calc_iq_best, color= 'green', label = 'Computational SAXS profile', zorder = 3)
+plt.fill_between(exp_q, calc_iq_best + calc_err_new, calc_iq_best - calc_err_new, color= 'green',alpha=0.2, zorder = 2)
+plt.errorbar(exp_q, exp_iq, yerr = exp_err, color = 'blue', linewidth = 1.0, fmt = 'o', label = 'Experimental SAXS profile', zorder = 1)
+plt.ylim([min_y*0.9, max_y*1.1])
+plt.xlim([0.0, 0.5])
+plt.ylabel('I(q)')
+plt.xlabel('q')
+plt.xticks([0.0, 0.1, 0.2, 0.3, 0.4, 0.5])
+plt.legend(loc = 'best')
+plt.savefig('Comparison_Computed_Scaled_Profiles.pdf')
+
 
