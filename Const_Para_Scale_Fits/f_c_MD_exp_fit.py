@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 #to account for the uncertainities during the background subtraction. 
 #Also prints the chi value (X) for the comparison between the experimental and computational profiles.
 
-# Loading the experimental data file. First column in the data file should be the q values, second column should be the I(q) values, third column should be the errors in I(q). 
+# Loading the experimental data file. First column in the data file should be the q values, 
+#second column should be the I(q) values, third column should be the errors in I(q). 
 # Change the name within the quotation marks ('') to your experimental file's path.
 
 exp_q, exp_iq, exp_err               = np.loadtxt('EK_16_Back_Sub.txt', unpack = 'True', usecols = (0, 1, 2))
