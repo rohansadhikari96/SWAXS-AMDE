@@ -1,14 +1,20 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Python file to create a scaled computational scattering profile with error bars. Also prints the chi value (X) for the comparison between the experimental and computational profiles.
+# Python file to create a scaled computational scattering profile with error bars.
+# Also prints the chi value (X) for the comparison between the experimental and computational profiles.
 
-# Loading the experimental data file. First column in the data file should be the q values, second column should be the I(q) values, third column should be the errors in I(q). 
+# Loading the experimental data file. First column in the data file should be the q values, 
+#second column should be the I(q) values, third column should be the errors in I(q). 
 # Change the name within the quotation marks ('') to your experimental file's path.
+
 q_exp, Iq_exp, err_exp             = np.loadtxt('./EK_16_Back_Sub.txt', unpack = 'True', usecols = (0, 1, 2))
-# Loading the computational data file. First column should be the q values (same as experimental q), second column should be the computational I(q), third column should be the errors
+
+# Loading the computational data file. First column should be the q values (same as experimental q),
+# second column should be the computational I(q), third column should be the errors
 # in the computational I(q)
 # Change the name within the quotation marks ('') to your computational file's path.
+
 Iq_calc_ff19o, err_calc_ff19o      = np.loadtxt('./Explicit_Water_q_Iq_Err.txt', unpack = 'True', usecols = (1, 2))
 
 # Initialization of relevant variables.
