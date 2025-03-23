@@ -6,6 +6,8 @@ import random
 import scattering_input_params_files
 import time
 
+# Run this file to perform the scattering computation after make changes on the 'scattering_input_params_files' file. 
+
 params       = scattering_input_params_files.params
 input_files  = scattering_input_params_files.input_files
 output_files = scattering_input_params_files.output_files 
