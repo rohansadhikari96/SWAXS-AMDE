@@ -12,7 +12,7 @@ SWAXS-AMDE builds on the pioneering theoretical foundations laid by Park et al. 
 
 For now the bulk solvent can only be pure water, but depending on the interest the code will be modified to be able to handle added salt and eventually other kinds of solvents.
 
-Details of the codes provided on this Github page
+Details of the codes and files provided on this Github page
 -------------------------------------------------------------
 
 Scattering_Computations/parallel_saxs_all.py - Main code which performs the scattering computation. Run this code to perform the scattering computation. 'python parallel_saxs_all.py'. The python code requires the MDTraj library.
@@ -22,6 +22,8 @@ Scattering_Computations/scattering_input_params_files.py - The file which allows
 Scaling_Only_Fitting/scale_MD_exp.py - This Python code is relevant if the users need to compute the error bars in the simulated background subtracted intensities. The code scales the computed intensities to the experimental scattering intensities, reports the chi value for the comparison and plots the experimental and the scaled computational I(q). The Scattering_Computations/parallel_saxs_all.py script provides the option to scale the computed scattering intensities to an input experimental profile. This code is hence only relevant if the users want to perform a block averaging analysis first (to obtain the error bars from the I(q) calculated for multiple blocks) and then compare the results to the experimental data. 
 
 Constant_Para_Scale_Fits/f_c_MD_exp_fit.py - This Python code is relevant if the users need to compute the error bars in the simulated background subtracted intensities. The code scales the computed intensities to the experimental scattering intensities and adds a constant parameter to account for the uncertainities in the background subtraction, reports the chi value for the comparison and plots the experimental and the scaled computational I(q). The Scattering_Computations/parallel_saxs_all.py script provides the option to scale the computed scattering intensities and add a constant parameter to account for the uncertainities in the background subtraction and then compare it to the input experimental profile. This code is hence only relevant if the users want to perform a block averaging analysis first (to obtain the error bars from the I(q) calculated for multiple blocks) and then compare the results to the experimental data.
+
+Example_Job_Scripts/run_saxs_parallel.jb - An example job script for running the scattering computation on a computational cluster.
 
 **References**
 ------------------------
