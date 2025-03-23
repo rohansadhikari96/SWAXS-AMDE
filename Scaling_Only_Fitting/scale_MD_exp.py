@@ -48,7 +48,7 @@ open('Explicit_Water_q_Iq_Scaled.txt', 'w').writelines(out)
 
 # Plotting the computed and experimental scattering profiles.
 plt.style.use("paper.mplstyle")
-plt.plot(q_exp, Iq_calc_new_ff19o, color= 'green', linewidth = 2.0, label = 'Computational SAXS profile', zorder = 3)
+plt.plot(q_exp, Iq_calc_new_ff19o, color= 'green', label = 'Computational SAXS profile', zorder = 3)
 plt.fill_between(q_exp, Iq_calc_new_ff19o + err_calc_new_ff19o, Iq_calc_new_ff19o - err_calc_new_ff19o, color= 'green',alpha=0.2, zorder = 2)
 plt.errorbar(q_exp, Iq_exp, yerr = err_exp, color = 'blue', linewidth = 1.0, fmt = 'o', label = 'Experimental SAXS profile', zorder = 1)
 plt.ylim([min_y*0.9, max_y*1.1])
