@@ -27,13 +27,13 @@ Example_Job_Scripts/run_saxs_parallel.jb - An example job script for running the
 
 **References**
 ------------------------
-[1] Rohan S. Adhikari (PhD thesis) - Sridhar, Rohan Adhikari. Simulation Studies on Polyampholytes can Inform Models of Protein Solution Thermodynamics. Diss. Rice University, 2024. [https://www.proquest.com/dissertations-theses/simulation-studies-on-polyampholytes-can-inform/docview/3089812166/se-2?accountid=10457](https://www.proquest.com/dissertations-theses/simulation-studies-on-polyampholytes-can-inform/docview/3089812166/se-2?accountid=10457)
+[1] Rohan S. Adhikari PhD thesis - Sridhar, Rohan Adhikari. Simulation Studies on Polyampholytes can Inform Models of Protein Solution Thermodynamics. Diss. Rice University, 2024. [https://www.proquest.com/dissertations-theses/simulation-studies-on-polyampholytes-can-inform/docview/3089812166/se-2?accountid=10457](https://www.proquest.com/dissertations-theses/simulation-studies-on-polyampholytes-can-inform/docview/3089812166/se-2?accountid=10457)
 
 [2] MDTraj Python library - McGibbon, Robert T., et al. "MDTraj: a modern open library for the analysis of molecular dynamics trajectories." Biophysical journal 109.8 (2015): 1528-1532. [https://doi.org/10.1016/j.bpj.2015.08.015](https://doi.org/10.1016/j.bpj.2015.08.015).
 
-[3] Explicit water calculation for frozen solutes - Park, Sanghyun, et al. "Simulated x-ray scattering of protein solutions using explicit-solvent models." The Journal of chemical physics 130.13 (2009). [https://doi.org/10.1063/1.3099611](https://doi.org/10.1063/1.3099611).
+[3] Explicit water scattering calculation for frozen solutes - Park, Sanghyun, et al. "Simulated x-ray scattering of protein solutions using explicit-solvent models." The Journal of chemical physics 130.13 (2009). [https://doi.org/10.1063/1.3099611](https://doi.org/10.1063/1.3099611).
 
-[4] Theory for explict water MD with thermal fluctuations - Chen, Po-chia, and Jochen S. Hub. "Validating solution ensembles from molecular dynamics simulation by wide-angle X-ray scattering data." Biophysical journal 107.2 (2014): 435-447. [https://doi.org/10.1016/j.bpj.2014.06.006](https://doi.org/10.1016/j.bpj.2014.06.006).
+[4] Theory for explict water scattering calculation with thermal fluctuations - Chen, Po-chia, and Jochen S. Hub. "Validating solution ensembles from molecular dynamics simulation by wide-angle X-ray scattering data." Biophysical journal 107.2 (2014): 435-447. [https://doi.org/10.1016/j.bpj.2014.06.006](https://doi.org/10.1016/j.bpj.2014.06.006).
 
 [5] WAXSiS package - Knight, Christopher J., and Jochen S. Hub. "WAXSiS: a web server for the calculation of SAXS/WAXS curves based on explicit-solvent molecular dynamics." Nucleic acids research 43.W1 (2015): W225-W230. [https://doi.org/10.1093/nar/gkv309](https://doi.org/10.1093/nar/gkv309). 
 
