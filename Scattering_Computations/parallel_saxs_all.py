@@ -1822,6 +1822,9 @@ natoms       = traj.n_atoms
 ucelllengths = traj.unitcell_lengths
 ucellangles  = traj.unitcell_angles
 
+num_frames_once = int(num_cores)
+floor_frames = np.floor_divide(nframes, num_frames_once)
+
 oxygens_water = [atom.index for atom in topol.atoms if (atom.residue.is_water and atom.name[0] == 'O')]
 nOxygens_water = len(oxygens_water)
 
